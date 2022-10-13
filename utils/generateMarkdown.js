@@ -16,13 +16,13 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === "MIT") {
-    return "[![License: MIT](https://choosealicense.com/licenses/mit/)";
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
   }
   if (license === "ISC") {
-    return "[![License: ISC](https://choosealicense.com/licenses/isc/)";
+    return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
   }
   if (license === "GNUGPL v3") {
-    return "[![License: GPL v3](https://choosealicense.com/licenses/gpl-3.0/)";
+    return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
   }
 
 }
@@ -30,10 +30,14 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license) {
-    return `Licensed under the ${renderLicenseLink(license)} license`
-  } else {
-    return ''
+  if (license === "MIT") {
+    return `Licensed under the ${renderLicenseLink(license)} license`;
+  }
+  if (license === "ISC") {
+    return `Licensed under the ${renderLicenseLink(license)} license`;
+  }
+  if (license === "GNUGPL v3") {
+    return `Licensed under the ${renderLicenseLink(license)} license`;
   }
 }
 
