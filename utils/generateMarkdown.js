@@ -56,7 +56,7 @@ function MarkDown(answers) {
   - [problem](#problem)
   - [motivation](#motivation)
   - [learned](#learned)
-  - [stand](#stand)
+  - [link](#link)
   - [installation](#installation)
   - [usage](#usage)
   - [credits](#credits)
@@ -79,8 +79,10 @@ function MarkDown(answers) {
   ## learned
   ${answers.learned}
 
-  ## stand
-  ${answers.stand}
+  ## link
+  ${answers.link}
+  Video: [video](${answers.link}).
+
 
   ## installation
   ${answers.installation}

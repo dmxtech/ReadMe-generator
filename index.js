@@ -40,8 +40,8 @@ var questions = [
     },
     {
         type: 'input',
-        name: 'stand',
-        message: 'What makes your project stand out?',
+        name: 'link',
+        message: 'Do you have a link or video?',
     },
     {
         type: 'input',
